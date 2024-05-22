@@ -41,7 +41,7 @@ fn main() -> Result<(), Box<EvalAltResult>> {
         ast_times.push(ast_duration);
     }
 
-    // プロットの作成
+    // plot the results
     let trace1 = Scatter::new(ns.clone(), rust_times)
         .name("Rust")
         .mode(Mode::LinesMarkers);
