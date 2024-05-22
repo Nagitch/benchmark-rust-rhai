@@ -1,0 +1,10 @@
+services:
+  benchmark-rust-rhai:
+    container_name: benchmark-rust-rhai
+    build: .
+    working_dir: /usr/src
+    volumes:
+      - .:/usr/src
+    ports:
+      - "4000:4000"
+    command: cargo run --release
