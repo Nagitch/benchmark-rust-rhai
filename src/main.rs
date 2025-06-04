@@ -53,9 +53,9 @@ fn main() -> Result<(), Box<EvalAltResult>> {
         .mode(Mode::LinesMarkers);
 
     let layout = Layout::new()
-        .title(Title::new("Rust vs Rhai and Rhai (AST) Fibonacci Benchmark"))
-        .x_axis(Axis::new().title(Title::new("n: Fibonacci number index")))
-        .y_axis(Axis::new().title(Title::new("Time (s)")));
+        .title("Rust vs Rhai and Rhai (AST) Fibonacci Benchmark")
+        .x_axis(Axis::new().title(Title::with_text("n: Fibonacci number index")))
+        .y_axis(Axis::new().title(Title::with_text("Time (s)")));
     let mut plot = Plot::new();
     plot.set_layout(layout);
     plot.add_trace(trace1);
