@@ -1,6 +1,6 @@
 # Benchmark Rust Rhai
 
-very simple benchmarking, Rust vs Rhai script (Direct) and Rhai (AST) that culculates the 1 to 10th Fibonacci number.
+very simple benchmarking, Rust vs Rhai script (Direct) and Rhai (AST) that calculates the 1 to 10th Fibonacci number.
 
 ## How to run
 
